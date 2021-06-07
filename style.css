@@ -1,0 +1,9 @@
+body {
+    background-color: burlywood;
+}
+
+#webcam {
+    border-color: black;
+    border-width: 2px;
+    border-style: dashed;
+}

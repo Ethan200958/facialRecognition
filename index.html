@@ -1,0 +1,41 @@
+<html>
+        <head>
+            <title>Facial Recognition</title>
+
+                
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <div class="container">
+<center>
+        <h1>FACIAL RECOGNITION WEB APPLICATION </h1>
+        <p>This model is trained to identify the following people:</p>
+        <br>
+        <h3>ETHAN</h3>
+        <br>
+        <hr>
+        <h3>NITZAN</h3>
+        <h1>Webcam View:</h1>
+        <div id="webcam"></div>
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+      <button type="button" class="btn btn-success" id="capture_img" onclick="take_snapshot()">Capture Image</button>
+      <br><br>
+      <button type="button" class="btn btn-warning" id="identify_img">Identify Image</button>
+      <br><br>
+      <p style="font-size:22px;" id="obj">Object:</p>      
+      <p style="font-size:22px;" id="acc">Accuracy:</p>
+    </div>
+</center>
+        </body>
+        <script src="main.js"></script>
+</html>
